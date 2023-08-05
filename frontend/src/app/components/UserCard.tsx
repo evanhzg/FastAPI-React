@@ -13,7 +13,7 @@ const UserCard = ({ user }) => {
   };
 
   return (
-    <div className="border p-4 rounded shadow bg-white cursor-pointer" onClick={handleCardClick}>
+    <div className="border p-4 rounded-xl shadow bg-white cursor-pointer" onClick={handleCardClick}>
       <h3 className="text-xl font-semibold mb-2">{user.first_name} {user.last_name}</h3>
       <p>Email: {user.email}</p>
       <p>Phone: {user.phone}</p>

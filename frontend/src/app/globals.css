@@ -8,20 +8,21 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+    min-height: 100dvh;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: rgb(0,175,255);
+    background: linear-gradient(
+        141deg,
+        rgba(0,175,255,1) 0%,
+        rgba(9,59,121,1) 0%,
+        rgba(0,142,171,1) 100%
+    );
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
 }
